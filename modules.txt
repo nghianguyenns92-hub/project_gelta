@@ -1,0 +1,32 @@
+Project_gelta/
+├── backend/
+│   ├── node_modules/         # Thư mục chứa các package Node.js (tự động tạo)
+│   ├── services/
+│   │   ├── characterManager.js   # Quản lý logic nhân vật, chỉ số
+│   │   ├── itemManager.js        # Quản lý logic vật phẩm
+│   │   ├── databaseService.js    # Tương tác với Google Firestore
+│   │   ├── geminiService.js      # Tương tác với Gemini API
+│   ├── routes/
+│   │   ├── gameRoutes.js         # Định nghĩa các API endpoint cho game
+│   ├── data/
+│   │   ├── level_data.json       # Dữ liệu cấp độ tu luyện
+│   │   └── item_data.json        # Dữ liệu vật phẩm
+│   ├── .env                    # Biến môi trường (API keys, config Firestore)
+│   ├── package.json            # Thông tin dự án và dependencies
+│   └── server.js               # File chính khởi chạy server
+│
+├── frontend/
+│   ├── assets/               # Chứa hình ảnh, âm thanh, font chữ
+│   │   ├── images/
+│   │   └── sounds/
+│   ├── css/
+│   │   └── style.css             # File CSS tùy chỉnh (bổ sung cho Tailwind)
+│   ├── js/
+│   │   ├── main.js               # Logic chính của frontend
+│   │   └── ui.js                 # Xử lý các sự kiện giao diện
+│   ├── index.html              # Trang chủ của game (dựa trên 15 sườn layout.txt)
+│   └── README.md               # Hướng dẫn sử dụng/giới thiệu frontend
+│
+├── .gitignore                # Danh sách file và thư mục cần bỏ qua khi commit lên Git
+├── LICENSE                   # Giấy phép phần mềm (ví dụ: MIT)
+└── README.md                 # Giới thiệu tổng quan dự án, hướng dẫn cài đặt
